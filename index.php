@@ -8,7 +8,6 @@ $dbname = "shoe_store";      // Имя базы данных
 // Подключение к MySQL
 $conn = new mysqli($host, $user, $password, $dbname);
 
-// Проверка подключения
 if ($conn->connect_error) {
     die("Ошибка подключения: " . $conn->connect_error);
 }

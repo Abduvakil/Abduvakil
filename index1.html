@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель Администратора - Магазин Обуви</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .dashboard-item {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard-item h3 {
+            margin-top: 0;
+        }
+        .dashboard-item button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .dashboard-item button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Панель Администратора - Магазин Обуви</h1>
+    </header>
+
+    <nav>
+        <a href="#products">Товары</a>
+        <a href="#orders">Заказы</a>
+        <a href="#customers">Клиенты</a>
+        <a href="#reports">Отчеты</a>
+    </nav>
+
+    <section>
+        <h2>Управление Магазином</h2>
+        <div class="dashboard">
+            <!-- Управление товарами -->
+            <div class="dashboard-item" id="products">
+                <h3>Товары</h3>
+                <p>Добавление, редактирование и удаление товаров.</p>
+                <button>Управлять товарами</button>
+            </div>
+
+            <!-- Управление заказами -->
+            <div class="dashboard-item" id="orders">
+                <h3>Заказы</h3>
+                <p>Просмотр и управление заказами клиентов.</p>
+                <button>Просмотреть заказы</button>
+            </div>
+
+            <!-- Управление клиентами -->
+            <div class="dashboard-item" id="customers">
+                <h3>Клиенты</h3>
+                <p>Просмотр и управление данными клиентов.</p>
+                <button>Управлять клиентами</button>
+            </div>
+
+            <!-- Отчеты -->
+            <div class="dashboard-item" id="reports">
+                <h3>Отчеты</h3>
+                <p>Отчеты по продажам, заказам и клиентам.</p>
+                <button>Посмотреть отчеты</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Магазин Обуви. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
